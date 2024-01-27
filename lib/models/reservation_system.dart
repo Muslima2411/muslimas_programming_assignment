@@ -179,7 +179,6 @@ class ReservationSystem {
   static void updateReservation() {
 
     List<Meal> menu = [];
-    Reservation reservation;
     Map<Meal, int> mealchoices = {};
 
     // Set minimum and maximum values for the number of meals
@@ -298,8 +297,6 @@ class ReservationSystem {
   }
 
   static void viewReservations() {
-    String keys = "";
-    double totalCost = 0;
     if (reservationsList.isEmpty) {
       print("No reservations found.");
     } else {
